@@ -1,0 +1,91 @@
+/*!
+ * Base Style
+ * Created By Tillal Saeed
+ */
+
+ @font-face {
+  font-family: 'Helvatic';
+  src: url("../fonts/Helvetica.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // Adjust as needed
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvatic';
+    line-height: 1.5;
+  }
+
+ 
+  
+  // Normalize styles for common elements
+  a {
+    text-decoration: none;
+  }
+  
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+
+  a:focus{
+    outline: none;
+    border: none;
+  }
+  
+
+  // Scroll Css
+  .scroll-downs {
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+     left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+    z-index: 999;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #cfcfcf;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #000;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }

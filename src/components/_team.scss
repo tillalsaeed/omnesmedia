@@ -1,0 +1,48 @@
+.team{
+    padding: 8rem 0;
+    h2{
+    margin-bottom: 4rem;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 3rem;
+
+        h4{
+            writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  min-width: 20px;
+  font-size: 18px;
+
+  span{
+    font-weight: 200;
+    font-size: 14px;
+    color: #6B7280;
+  }
+        }
+
+        img{
+            flex:2;
+            padding-right: 2rem;
+        }
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1024px){
+        .col-md-4{
+            flex: 0 0 50%;
+            width: 50%;
+            max-width: 50%;
+        }
+
+        img{
+            flex:1;
+            padding-right: 2rem;
+            width: 100%;
+        }
+
+    }
+
+ img{
+    width: 100%;
+ }
+}
+

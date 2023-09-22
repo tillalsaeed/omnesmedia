@@ -1,0 +1,50 @@
+.solutions{
+    padding: 8rem 1rem;
+
+    &__box{
+        margin-top: 6rem;
+    }
+
+    .col-md-4{
+        @media only screen and (min-width: 767px) and (max-width: 992px){
+            width: 50%;
+            flex: 1 1 50%;
+            max-width: 50%;
+        }
+    }
+
+}
+
+.sitem{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-bottom: 6rem;
+    
+
+    &__img{
+        // width: 69px;
+        // height: 69px;
+    }
+
+    &__block{
+        max-width: 282px;
+        @media only screen and (max-width: 767px){
+            max-width: 100% !important;
+        }
+        h4{
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            color: #000;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #000;
+        }
+    }
+
+   
+
+   
+}
